@@ -4,9 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>todo list</title>
-   <link rel="stylesheet" href="styles.css"> 
+   
 </head>
 <body>
-    <h1>hii</h1>
+    <h1 class="heading">Your Todo list</h1>
+
+    <div class="btn-div">
+        <button class="add-project-btn">Add project</button>
+        <button class="add-todo-btn">Add todo</button>
+    </div>
+
+    <div id="projects-div">
+
+        <div id="default-project" class="projects">
+            <h2>Project</h2>
+        </div>
+
+    </div>
+
+
+    <nav class="nav">
+        <h2 class="nav-heading">Your projects</h2>
+        <div class="nav-div">
+
+            <div class="nav-div-project">
+                <a class="nav-btn-project" href="#default-project">
+                    project
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <dialog class="project-dialog">
+        <form>
+            <div>
+                <label for="project-name">Please enter your project's name</label>
+                <input id="project-name" type="text" placeholder="eg: study"></input>
+            </div>
+
+            <div>
+                <button id="project-submit-btn">Create</button>
+            </div>
+        </form>     
+    </dialog>
+
+
+    <dialog class="todo-dialog">
+        <form>
+            <div>
+                <label for="todo-name">What is your todo name</label>
+                <input type="text" id="todo-name" required></input>
+            </div>
+
+            <div>
+                
+            </div>
+        </form>
+    </dialog>
 </body>
 </html>
